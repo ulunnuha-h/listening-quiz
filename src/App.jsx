@@ -2,7 +2,7 @@ import Navbar from "./components/navbar";
 
 function App() {
   return (
-    <main>
+    <main className="container mx-auto">
       <Navbar />
     </main>
   );
