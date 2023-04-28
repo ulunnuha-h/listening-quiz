@@ -6,11 +6,11 @@ function App() {
   return (
     <main className="container mx-auto">
       <Navbar />
-      <div className="pt-24 flex gap-8 px-4">
-        <section className="basis-2/3">
+      <div className="pt-24 flex gap-8 px-4 lg:flex-nowrap flex-wrap">
+        <section className="lg:basis-2/3 basis-full">
           <QuizForm />
         </section>
-        <section className="basis-1/3">
+        <section className="lg:basis-1/3 basis-full mb-8">
           <QuizStatus />
         </section>
       </div>
