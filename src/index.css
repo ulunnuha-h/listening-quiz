@@ -50,4 +50,12 @@
   .input-text input{
     @apply bg-transparent border-b-2 border-gray-900 border-dashed
   }
+
+  .bullet-status.answered{
+    @apply bg-green-200 
+  }
+  .bullet-status{
+    @apply bg-red-200 w-8 h-8 flex items-center justify-center rounded-full font-semibold
+  }
+  
 }
