@@ -20,4 +20,8 @@
   .btn-danger{
     @apply bg-red-500 text-white rounded-full
   }
+
+  .pill-blue{
+    @apply bg-sky-500 px-3 py-1 rounded-full text-white
+  }
 }

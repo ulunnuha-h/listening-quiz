@@ -1,9 +1,9 @@
 const QuizForm = () => {
   return (
     <div>
-      <section className="flex items-center gap-1 mb-4">
+      <section className="flex items-center gap-4 mb-4">
         <h1>Listening Tip</h1>
-        <span className="flex items-center gap-1">
+        <span className="flex items-center gap-1 pill-blue">
           <i className="fa-regular fa-clock"></i> <p>Time Left 44.55</p>
         </span>
       </section>
