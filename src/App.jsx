@@ -6,9 +6,13 @@ function App() {
   return (
     <main className="container mx-auto">
       <Navbar />
-      <div>
-        <QuizForm />
-        <QuizStatus />
+      <div className="pt-24 flex gap-8">
+        <section className="basis-2/3">
+          <QuizForm />
+        </section>
+        <section className="basis-1/3">
+          <QuizStatus />
+        </section>
       </div>
     </main>
   );
