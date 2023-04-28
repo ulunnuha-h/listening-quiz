@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  h1{
+    @apply text-2xl font-bold text-gray-700
+  }
+}
+
 @layer components{
   .btn-secondary{
     @apply bg-sky-100 border-[3px] border-sky-300 text-gray-500
