@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="container mx-auto">
       <Navbar />
-      <div className="pt-24 flex gap-8">
+      <div className="pt-24 flex gap-8 px-4">
         <section className="basis-2/3">
           <QuizForm />
         </section>
