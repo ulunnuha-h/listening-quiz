@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .btn-secondary{
+    @apply bg-sky-100 border-[3px] border-sky-300 text-gray-500
+  }
+
+  .btn-danger{
+    @apply bg-red-500 text-white rounded-full
+  }
+}
