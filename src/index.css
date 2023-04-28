@@ -34,7 +34,7 @@
   }
 
   .number{
-    @apply bg-gray-200 text-gray-900 aspect-square w-6 h-6 text-center px-2
+    @apply bg-gray-200 text-gray-900 w-7 h-6 text-center inline-block
   }
 
   .input-radio input, .input-radio label{
