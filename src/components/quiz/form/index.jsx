@@ -1,13 +1,29 @@
+import { useEffect, useState } from "react";
 import Part1 from "./part1";
 import Part2 from "./part2";
 
 const QuizForm = () => {
+  const [time, setTime] = useState("00.00");
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const currentTime = new Date();
+      setTime(
+        String(59 - currentTime.getMinutes()).padStart(2, "0") +
+          "." +
+          String(59 - currentTime.getSeconds()).padStart(2, "0")
+      );
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div>
       <section className="flex items-center gap-4 mb-4">
         <h1>Listening Tip</h1>
         <span className="flex items-center gap-1 pill-blue">
-          <i className="fa-regular fa-clock"></i> <p>Time Left 44.55</p>
+          <i className="fa-regular fa-clock"></i> <p>Time Left {time}</p>
         </span>
       </section>
       <p className="mb-4">
