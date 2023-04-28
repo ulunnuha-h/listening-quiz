@@ -21,7 +21,7 @@ const QuizForm = () => {
       <form>
         <Part1 />
         <Part2 />
-        <button>Submit</button>
+        <button className="btn-primary w-full py-3 my-12">Submit</button>
       </form>
     </div>
   );
