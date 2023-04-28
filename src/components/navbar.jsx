@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <main className="fixed bg-gray-100 w-screen left-0">
+    <main className="fixed bg-gray-100 w-screen left-0 z-10">
       <nav className="flex justify-between p-4 container mx-auto">
         <h1>Practice 1 - Listenening Test</h1>
         <div className="flex gap-4">
