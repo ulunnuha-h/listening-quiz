@@ -28,4 +28,22 @@
   .pill-blue{
     @apply bg-sky-500 px-3 py-1 rounded-full text-white
   }
+
+  .number{
+    @apply bg-gray-200 text-gray-900 aspect-square w-6 h-6 text-center px-2
+  }
+
+  .input-radio input, .input-radio label{
+    @apply cursor-pointer
+  }
+
+  .input-text{
+    @apply my-2
+  }
+  .input-text input:focus{
+    @apply outline-none
+  }
+  .input-text input{
+    @apply bg-transparent border-b-2 border-gray-900 border-dashed
+  }
 }
