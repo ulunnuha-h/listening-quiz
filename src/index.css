@@ -6,6 +6,10 @@
   h1{
     @apply text-2xl font-bold text-gray-700
   }
+
+  audio::-webkit-media-controls-panel, audio{
+    @apply bg-gray-200
+  }
 }
 
 @layer components{
