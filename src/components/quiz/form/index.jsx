@@ -1,3 +1,6 @@
+import Part1 from "./part1";
+import Part2 from "./part2";
+
 const QuizForm = () => {
   return (
     <div>
@@ -15,6 +18,11 @@ const QuizForm = () => {
       <audio controls className="w-full">
         <source src="horse.mp3" type="audio/mpeg" />
       </audio>
+      <form>
+        <Part1 />
+        <Part2 />
+        <button>Submit</button>
+      </form>
     </div>
   );
 };
