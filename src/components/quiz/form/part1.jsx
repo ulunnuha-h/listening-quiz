@@ -1,4 +1,8 @@
+import useQuestionHandler from "../../../hooks/useQuestionHandler";
+
 const Part1 = () => {
+  const questionHandler = useQuestionHandler();
+
   return (
     <>
       <header className="flex gap-2 px-4 py-2 items-center my-4 bg-sky-200">
@@ -21,19 +25,43 @@ const Part1 = () => {
         <div>
           <p className="mb-2">What is the woman from?</p>
           <section className="input-radio">
-            <input type="radio" id="q1a" name="question1" value="a" />
+            <input
+              type="radio"
+              id="q1a"
+              name="question1"
+              value="a"
+              onChange={questionHandler}
+            />
             <label htmlFor="q1a"> Germany</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q1b" name="question1" value="b" />
+            <input
+              type="radio"
+              id="q1b"
+              name="question1"
+              value="b"
+              onChange={questionHandler}
+            />
             <label htmlFor="q1b"> Rusia</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q1c" name="question1" value="c" />
+            <input
+              type="radio"
+              id="q1c"
+              name="question1"
+              value="c"
+              onChange={questionHandler}
+            />
             <label htmlFor="q1c"> Australia</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q1d" name="question1" value="d" />
+            <input
+              type="radio"
+              id="q1d"
+              name="question1"
+              value="d"
+              onChange={questionHandler}
+            />
             <label htmlFor="q1d"> Indonesia</label>
           </section>
         </div>
@@ -48,19 +76,43 @@ const Part1 = () => {
             hours by
           </p>
           <section className="input-radio">
-            <input type="radio" id="q2a" name="question2" value="a" />
+            <input
+              type="radio"
+              id="q2a"
+              name="question2"
+              value="a"
+              onChange={questionHandler}
+            />
             <label htmlFor="q2a"> Germany</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q2b" name="question2" value="b" />
+            <input
+              type="radio"
+              id="q2b"
+              name="question2"
+              value="b"
+              onChange={questionHandler}
+            />
             <label htmlFor="q2b"> Rusia</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q2c" name="question2" value="c" />
+            <input
+              type="radio"
+              id="q2c"
+              name="question2"
+              value="c"
+              onChange={questionHandler}
+            />
             <label htmlFor="q2c"> Australia</label>
           </section>
           <section className="input-radio">
-            <input type="radio" id="q2d" name="question2" value="d" />
+            <input
+              type="radio"
+              id="q2d"
+              name="question2"
+              value="d"
+              onChange={questionHandler}
+            />
             <label htmlFor="q2d"> Indonesia</label>
           </section>
         </div>
@@ -87,21 +139,36 @@ const Part1 = () => {
           <label htmlFor="q7">
             Name : Elisabeth<span className="number mx-2">7</span>
           </label>
-          <input type="text" id="q7" name="question7" />
+          <input
+            type="text"
+            id="q7"
+            name="question7"
+            onChange={questionHandler}
+          />
         </section>
         <p>Date of birth : 8. 10. 1975</p>
         <section className="input-text">
           <label htmlFor="q8">
             Address : <span className="number mx-2">8</span>
           </label>
-          <input type="text" id="q8" name="question8" />
+          <input
+            type="text"
+            id="q8"
+            name="question8"
+            onChange={questionHandler}
+          />
           <span> [street] Callington Haven</span>
         </section>
         <section className="input-text">
           <label htmlFor="q10">
             Policy Number : <span className="number mx-2">10</span>
           </label>
-          <input type="text" id="q10" name="question10" />
+          <input
+            type="text"
+            id="q10"
+            name="question10"
+            onChange={questionHandler}
+          />
         </section>
       </div>
     </>

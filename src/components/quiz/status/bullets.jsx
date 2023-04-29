@@ -6,7 +6,7 @@ const Bullets = () => {
   return (
     <div className="flex flex-wrap gap-4 my-8">
       {data.map((val, idx) => (
-        <span key={idx} className="bullet-status">
+        <span key={idx} className={`bullet-status ${val ? "answered" : ""}`}>
           {idx + 1}
         </span>
       ))}

@@ -3,36 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const quizSlice = createSlice({
   name: "quiz",
   initialState: {
-    answer: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-    ],
+    answer: Array(24).fill(""),
   },
   reducers: {
     changeByNumber: (state, action) => {
-      state.answer[action.number] = action.payload;
+      state.answer[action.payload.number - 1] = action.payload.value;
     },
   },
 });

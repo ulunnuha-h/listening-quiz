@@ -1,6 +1,9 @@
 import placeholder from "../../../assets/placeholder.jpg";
+import useQuestionHandler from "../../../hooks/useQuestionHandler";
 
 const Part2 = () => {
+  const questionHandler = useQuestionHandler();
+
   return (
     <>
       <header className="flex gap-2 px-4 py-2 items-center my-4 bg-sky-200">
@@ -25,19 +28,37 @@ const Part2 = () => {
         <label htmlFor="q11">
           <span className="number">11</span> traffic lights
         </label>
-        <input type="text" id="q11" className="ml-2" name="question11" />
+        <input
+          type="text"
+          id="q11"
+          className="ml-2"
+          name="question11"
+          onChange={questionHandler}
+        />
       </section>
       <section className="input-text">
         <label htmlFor="q12">
           <span className="number">12</span> petrol station
         </label>
-        <input type="text" id="q12" className="ml-2" name="question12" />
+        <input
+          type="text"
+          id="q12"
+          className="ml-2"
+          name="question12"
+          onChange={questionHandler}
+        />
       </section>
       <section className="input-text">
         <label htmlFor="q13">
           <span className="number">13</span> blue van
         </label>
-        <input type="text" id="q13" className="ml-2" name="question13" />
+        <input
+          type="text"
+          id="q13"
+          className="ml-2"
+          name="question13"
+          onChange={questionHandler}
+        />
       </section>
 
       {/* Question 14-20 Header*/}
@@ -60,7 +81,12 @@ const Part2 = () => {
             <label htmlFor="q14">
               <em className="font-semibold">answer </em>
             </label>
-            <input type="text" id="q14" name="question14" />
+            <input
+              type="text"
+              id="q14"
+              name="question14"
+              onChange={questionHandler}
+            />
           </section>
         </div>
       </div>
@@ -74,7 +100,12 @@ const Part2 = () => {
             <label htmlFor="q15">
               <em className="font-semibold">answer </em>
             </label>
-            <input type="text" id="q15" name="question15" />
+            <input
+              type="text"
+              id="q15"
+              name="question15"
+              onChange={questionHandler}
+            />
           </section>
         </div>
       </div>
@@ -86,7 +117,12 @@ const Part2 = () => {
             <label htmlFor="q16">
               <em className="font-semibold">answer </em>
             </label>
-            <input type="text" id="q16" name="question16" />
+            <input
+              type="text"
+              id="q16"
+              name="question16"
+              onChange={questionHandler}
+            />
           </section>
         </div>
       </div>
